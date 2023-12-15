@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script type="text/javascript">
+
+// Función para mostrar el valor de altitud de una trama GNSS en pies
+function mostrarAltitudEnPies(trama) {
+  // Dividir la trama por comas y mostrar el valor correspondiente a la altitud
+  var partes = trama.split(',');
+  var altitudEnMetros = parseFloat(partes[11].trim()); // El valor de altitud está en la posición 12 (comenzando desde 0)
+  
+  // Convertir altitud a pies
+  var altitudEnPies = altitudEnMetros * 3.28084;
+
+  console.log("El valor de altitud es: " + altitudEnMetros + " metros, que equivale a " + altitudEnPies + " pies.");
+}
+
+// Trama de ejemplo
+var tramaEjemplo = "+CGNSSINFO: 3,10,,03,00,18.5329762,N,69.8939590,W,111223,011126.00,1.0,0.254,,6.98,5.15,4.72,06";
+
+// Mostrar el valor de altitud de la trama de ejemplo en pies
+mostrarAltitudEnPies(tramaEjemplo);
+
+
+
+</script>
