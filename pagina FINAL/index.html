@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WaveSmart</title>
+    <link rel="stylesheet" href="style.css" />
+    
+
+  </head>
+  <body>
+    <section>
+      <div class="bannerVideo" id="slideShow">
+        <video
+          src="ocean.mp4"
+          
+          autoplay
+          muted
+          loop class="active"
+          
+        ></video>
+        < <video src="wave003.MOV" autoplay muted loop ></video>
+              </div>
+      <div class="container">
+        <header id="navbar">
+          <a href="#" class="logo">WaveSmartRD</a>
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="gps_gnss.html">GPS</a></li>
+            <li><a href="data_coast.html">Data</a></li>
+            <li><a href="wavet01.html">WaveT-01</a></li>
+            <li><a href="wsrov-01.html">Wsrov-01</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span class="menuIcon" onclick="toggleMenu()"></span>
+        </header>
+        <div class="content">
+          <div class="bannerText" id="slideShowText">
+            <div class="active">
+              <h2>WaveSmart</h2>
+              <p>
+                WaveSmart es un sistema de monitorización y recopilación 
+                de datos utilizado en el Mar Caribe para medir y registrar diversas condiciones marítimas. 
+              </p>
+            </div>
+            <div>
+              <h2>Data</h2>
+              <p>
+                Esta plataforma es capaz de proporcionar información en tiempo real sobre factores cruciales,
+                 como el nivel de pH del agua, la turbidez, la velocidad del viento y el tamaño de las olas.  
+              </p>
+            </div>
+            <div>
+              <h2>Flexibilidad</h2>
+              <p>
+                Lo que hace que WaveSmart sea especialmente útil es que los datos recopilados por este sistema se pueden acceder desde cualquier parte del mundo. Esto brinda a investigadores, científicos y otros interesados la posibilidad de realizar un seguimiento de las condiciones 
+                marítimas en el Mar Caribe y analizar la información sin importar su ubicación geográfica.
+              </p>
+            </div>
+            <div>
+              <h2>Accesible</h2>
+              <p>
+                Esta capacidad de acceso global hace que WaveSmart sea una
+                 herramienta valiosa para el monitoreo y estudio de las condiciones oceánicas en esta región.
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="controls">
+          <li onclick="prevSlide();prevSlideText();"><img src="left.png" /></li>
+          <li onclick="nextSlide();nextSlideText();"><img src="right.png" /></li>
+        </ul>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
