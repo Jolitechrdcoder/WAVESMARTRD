@@ -1,0 +1,1 @@
+con ese script puedes sacar los frames de un video y almacenarlo es un acarpeta
